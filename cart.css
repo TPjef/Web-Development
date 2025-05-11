@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* สไตล์สำหรับส่วนตะกร้าสินค้า */
+.cart-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* พื้นหลังกึ่งโปร่งใส */
+    display: none; /* ซ่อนไว้ตอนแรก */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* ให้แสดงทับเนื้อหาอื่น */
+}
+
+.cart-modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cart-modal h2 {
+    
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.cart-items li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.cart-items li:last-child {
+    border-bottom: none;
+}
+
+.cart-items .item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.cart-items .item-details {
+    flex-grow: 1;
+}
+
+.cart-items .item-name {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.cart-items .item-price {
+    color: #dc3545;
+    font-size: 0.9em;
+}
+
+.cart-items .item-quantity {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.cart-items .quantity-btn {
+    background: none;
+    border: 1px solid #ccc;
+    color: #555;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.cart-items .quantity-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.cart-items .item-qty {
+    margin: 0 5px;
+    font-size: 1em;
+}
+
+.cart-total {
+    text-align: right;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.cart-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.cart-icon a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.cart-icon a:hover {
+    color: #007bff;
+}

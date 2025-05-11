@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก - ร้านค้าออนไลน์ของคุณ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css"> </head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <h2>สมัครสมาชิก</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="username">ชื่อผู้ใช้:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">อีเมล:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">รหัสผ่าน:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">ยืนยันรหัสผ่าน:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit" class="button primary">สมัครสมาชิก</button>
+                <p class="login-link">มีบัญชีอยู่แล้ว? <a href="login.html">เข้าสู่ระบบ</a></p>
+            </form>
+            <div id="register-message" class="message"></div>
+        </div>
+    </div>
+
+    <script src="register.js"></script> </body>
+</html>

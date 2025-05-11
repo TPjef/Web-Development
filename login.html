@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ - ร้านค้าออนไลน์ของคุณ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css"> </head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <h2>เข้าสู่ระบบ</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">ชื่อผู้ใช้หรืออีเมล:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">รหัสผ่าน:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="button primary">เข้าสู่ระบบ</button>
+                <p class="register-link">ยังไม่มีบัญชี? <a href="register.html">สมัครสมาชิก</a></p>
+            </form>
+            <div id="login-message" class="message"></div>
+        </div>
+    </div>
+
+    <script src="login.js"></script> </body>
+</html>
