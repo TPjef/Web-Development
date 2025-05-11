@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สั่งซื้อสินค้า</title>
+    <link rel="stylesheet" href="buy.css">
+</head>
+<body>
+ <div class="container">
+    <!-- ที่อยู่ในการจัดส่ง -->
+    <div class="section">
+      <div class="section-header">ที่อยู่ในการจัดส่ง</div>
+      <div class="address-display" id="address-display">
+        <p class="text" id="current-address">ชื่อ-นามสกุล</p>
+        <p class="text" id="current-address-detail">ที่อยู่ - รหัสไปรษณีย์</p>
+        <button class="button edit-button" onclick="editAddress()">แก้ไข</button>
+      </div>
+      <div class="edit-form" id="edit-form" style="display: none;">
+        <input type="text" id="new-address" value="" />
+        <textarea id="new-address-detail"></textarea>
+        <button class="button save-button" onclick="saveAddress()">บันทึก</button>
+        <button class="button cancel-button" onclick="cancelEdit()">ยกเลิก</button>
+      </div>
+    </div>
+
+    <!-- รายการสินค้า -->
+    <div class="section">
+      <div class="section-header">รายการสินค้า</div>
+      <div class="order-item">
+        <p class="item-name">FLASH SALE</p>
+        <p class="text">คีบอร์ด</p>
+        <p class="item-price">฿590</p>
+      </div>
+      <div class="order-item">
+        <p class="item-name">ความคุ้มครองสินค้า</p>
+        <p class="item-price">฿20</p>
+      </div>
+    </div>
+
+    <!-- การจัดส่ง -->
+    <div class="section">
+      <div class="section-header">การจัดส่ง</div>
+      <div class="shipping-info">
+        <p class="text">รูปแบบ: ส่งธรรมดา</p>
+        <p class="text">ถึงภายใน1-2 สัปดาห์</p>
+        <p class="item-price">ค่าจัดส่ง: ฿35</p>
+      </div>
+    </div>
+
+    <!-- ยอดรวม -->
+    <div class="section total">ยอดรวมสุทธิ: ฿645</div>
+
+    <!-- ปุ่มสั่งซื้อและยกเลิก -->
+    <div class="button-group">
+      <button class="button order-button" onclick="placeOrder()">สั่งซื้อสินค้า</button>
+      <button class="button exit-button" onclick="cancelOrder()">ยกเลิก</button>
+    </div>
+  </div>
+
+  <script src="buy.js"></script>
+</body>
+</html>

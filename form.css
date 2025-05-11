@@ -44,15 +44,15 @@
 
 .form-group input:focus {
     outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    border-color: #ffa600;
+    box-shadow: 0 0 5px rgb(255, 136, 0);
 }
 
 .form-wrapper button[type="submit"] {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #ffae00;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -62,7 +62,7 @@
 }
 
 .form-wrapper button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #ffae00;
 }
 
 .login-link, .register-link {
@@ -73,7 +73,7 @@
 }
 
 .login-link a, .register-link a {
-    color: #007bff;
+    color: #ffae00;
     text-decoration: none;
 }
 
