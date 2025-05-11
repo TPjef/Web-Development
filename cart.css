@@ -120,10 +120,15 @@
 
 .cart-icon a {
     text-decoration: none;
-    color: #555;
+    color: #ff9900;
     transition: color 0.3s ease;
+    margin-left: 9em;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 6px;
 }
 
 .cart-icon a:hover {
-    color: #007bff;
+    color: #ffffff;
+    background-color: #744600;
 }

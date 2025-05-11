@@ -18,7 +18,7 @@
 }
 
 .search-bar button {
-    background-color: #007bff;
+    background-color: #9a5500;;
     color: #fff;
     border: none;
     padding: 8px 15px;
@@ -29,7 +29,7 @@
 }
 
 .search-bar button:hover {
-    background-color: #0056b3;
+    background-color: #ffbf00;
 }
 
 /* ปรับตำแหน่งแถบค้นหาใน header */
