@@ -1,28 +1,4 @@
-
-    const images = [
-      "https://down-th.img.susercontent.com/file/th-11134207-7r98p-lve9gjf4nfux31.webp",
-      "https://down-th.img.susercontent.com/file/th-11134207-7r98z-lve9gjf49ebe7f.webp",
-      "https://down-th.img.susercontent.com/file/th-11134207-7r98z-lve9gjeu9ssp15.webp"
-    ];
-
-    let currentIndex = 0;
-    const img = document.getElementById("product-img");
-
-    function showImage(index) {
-      img.src = images[index];
-    }
-
-    function nextImage() {
-      currentIndex = (currentIndex + 1) % images.length;
-      showImage(currentIndex);
-    }
-
-    function prevImage() {
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      showImage(currentIndex);
-    }
-
-    setInterval(nextImage, 3000);
+ const img = document.getElementById("product-img");
 
     let startX = 0;
     const touchArea = document.getElementById("touch-area");
@@ -33,8 +9,6 @@
 
     touchArea.addEventListener("touchend", function (e) {
       const endX = e.changedTouches[0].clientX;
-      if (startX - endX > 50) nextImage();
-      else if (endX - startX > 50) prevImage();
     });
 
     const form = document.getElementById('comment-form');
@@ -77,33 +51,10 @@
       }
     });
 
-    let selectedColor = '';
-    let selectedImage = '';
-    const colorButtons = document.querySelectorAll('.color-option');
-
-    colorButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        colorButtons.forEach(btn => btn.classList.remove('selected'));
-        button.classList.add('selected');
-        selectedColor = button.dataset.value;
-        selectedImage = button.dataset.img;
-        document.getElementById('product-img').src = selectedImage;
-        console.log('เลือกสี:', selectedColor);
-      });
-    });
-
     document.querySelector('.btn-buy').addEventListener('click', () => {
-      if (!selectedColor) {
-        alert('กรุณาเลือกสีสินค้าก่อนสั่งซื้อ');
-        return;
-      }
       window.location.href = "http://127.0.0.1:5500/buy/%E0%B8%B4buy.html";
     });
 
     document.querySelector('.btn-cart').addEventListener('click', () => {
-      if (!selectedColor) {
-        alert('กรุณาเลือกสีสินค้าก่อนเพิ่มลงรถเข็น');
-        return;
-      }
-      alert('เพิ่มสินค้าเข้าสู่รถเข็น: ' + selectedColor);
+      alert('เพิ่มสินค้าเข้าสู่รถเข็น');
     });
