@@ -36,13 +36,6 @@ header .container {
     align-items: center;
 }
 
-.logo a {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    text-decoration: none;
-    margin-left: 60px;
-}
 
 nav ul {
     list-style: none;
