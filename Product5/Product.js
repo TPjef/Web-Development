@@ -52,7 +52,7 @@
     });
 
     document.querySelector('.btn-buy').addEventListener('click', () => {
-      window.location.href = "http://127.0.0.1:5500/buy/%E0%B8%B4buy.html";
+      window.location.href = "http://127.0.0.1:5500/buy5/%E0%B8%B4buy5.html";
     });
 
     document.querySelector('.btn-cart').addEventListener('click', () => {
