@@ -7,7 +7,7 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: hwb(42 0% 0%);
     color: #333;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    background-color: #fff;
+    background-color: hwb(38 0% 11%);
     padding: 20px 0;
     border-bottom: 1px solid #eee;
 }
@@ -68,7 +68,7 @@ nav a:hover {
 }
 
 .hero {
-    background-color: #e9ecef;
+    background-color:  #fff;
     padding: 80px 5em;
     text-align: center;
 }
