@@ -191,3 +191,65 @@ footer {
 footer p {
     margin: 0;
 }
+/* Responsive Design */
+
+/* มือถือ (หน้าจอกว้างไม่เกิน 600px) */
+@media (max-width: 600px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* แท็บเล็ต (หน้าจอกว้าง 601px ถึง 900px) */
+@media (max-width: 900px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 60px 30px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+/* เดสก์ท็อปเล็ก (หน้าจอกว้าง 901px ถึง 1200px) */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero {
+        padding: 70px 40px;
+    }
+}
